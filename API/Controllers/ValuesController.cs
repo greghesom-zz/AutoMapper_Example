@@ -23,10 +23,10 @@ namespace API.Controllers
 
 
             var dog = new Dog { Name = "Lucky" };
-            var pet = AutoMapper.Mapper.Map<Pet>(dog);
+            var pet = AutoMapper.Mapper.Map<Pet>(dog); //Why does this fail?
 
             Console.WriteLine(customer.FirstName);
-            // Output: Lackey
+
             return new string[] { "value1", "value2" };
         }
 
