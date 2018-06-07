@@ -10,7 +10,7 @@ namespace API.Core
     [MapsTo(typeof(Dog))]
     public class Pet
     {
-        [MapsToProperty(typeof(Pet), "Name")]
+        [MapsToProperty(typeof(Dog), "Name")]
         public string PetName { get; set; }
     }
 }
